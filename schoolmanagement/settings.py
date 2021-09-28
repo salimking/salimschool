@@ -87,12 +87,23 @@ WSGI_APPLICATION = 'schoolmanagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'dabrlassr97mc4',
+
+        'USER': 'fjvuhafjpwhlqz',
+
+        'PASSWORD': '93eeb659f3fe1597d40327d0b4e8ffd8b0760083da421d2797690f65318d83f6',
+
+        'HOST': 'ec2-52-5-1-20.compute-1.amazonaws.com',
+
+        'PORT': '5432',
+
     }
 }
 
-
+# postgres://fjvuhafjpwhlqz:93eeb659f3fe1597d40327d0b4e8ffd8b0760083da421d2797690f65318d83f6@ec2-52-5-1-20.compute-1.amazonaws.com:5432/dabrlassr97mc4
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
